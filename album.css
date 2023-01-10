@@ -51,6 +51,7 @@ body{
 
 .card ul li{
     color:#811537;
+    background-color: 	#ec9dec;
 }
 .card h5{
     color:#64D1AF;
@@ -58,4 +59,7 @@ body{
 }
 .container:nth-of-type(3) img, .container:nth-of-type(5) img{
     border-radius: 35px;
+}
+.card{
+    background-color: #8B008B;
 }
