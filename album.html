@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="album.css">
 </head>
@@ -46,19 +48,25 @@
 
 
 
-
-
-    <div class="container">
-
-    
-         
+<div class="text-center">
+      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo" >Toggle the content below!</button>
+    </div>
+    <div class="container" id="demo" class="collapse">
+ 
         <h2 id="about-me">About Me</h2>
+
+
+        
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quisquam eius corporis voluptate odio ipsa assumenda suscipit qui laboriosam? Amet laboriosam eligendi non modi quo exercitationem nisi at eum rem.
         Maiores sint earum unde facilis iure nemo tempora nihil maxime quia, id provident dolores velit qui ea quidem nesciunt vero repellat voluptatem veniam nam accusamus molestiae. Quasi necessitatibus exercitationem dicta?
         Quae corrupti in vitae fugit magni qui tempora, nesciunt, totam libero nam expedita suscipit asperiores officiis. Hic aliquid in maxime repellat, libero culpa illum perspiciatis quos accusantium sunt itaque nobis.
         Maxime facilis deleniti fuga at, quam, consequuntur voluptate eligendi repudiandae, obcaecati delectus dolorum fugiat? Minus, at. Unde id quia autem rerum eius numquam corrupti assumenda mollitia! Dicta unde esse provident?</p>
        </div>
-        <div class="container">
+
+       <div class="text-center">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#top" >Toggle the content below!</button>
+      </div>
+        <div class="container " id="top" class="collapse">
         <h2 id="top-songs">Top Songs</h2>
         <div class="row d-flex  justify-content-lg-around ">
             <div class="col-sm-6 col-md-4 col-lg-3 mt-2 mb-5">
@@ -177,11 +185,13 @@
             </div>
         </div>
       </div>
-   
-    <div class="container">
+      <div class="text-center">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#fav-al" >Toggle the content below!</button>
+      </div>
+    <div class="container " id="fav-al" class="collapse">
       
         <h2 id="fav">Section for favourite Album</h2>
-        <div class="row">
+        <div class="row mb-5">
         <img src="https://m.media-amazon.com/images/I/61hf-fyFxJL._SL1420_.jpg" class="img-fluid col-sm-6 col-md-6 col-lg-8" alt="">
         <div class="col-sm-6 col-md-6 col-lg-4">
         <h4 class="pt-0 mt-0" style="color:#D18A64">Title : Memories...Do Not Open</h4>
@@ -260,8 +270,10 @@
         </div>
         </div>
     </div>
-    
-    <div class="container">
+    <div class="text-center">
+      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#shame" >Toggle the content below!</button>
+    </div>
+    <div class="container" id="shame" class="collapse">
         <h2 id="worst-songs">Hall of shame</h2>
         <div class="row d-flex justify-content-lg-around">
             <div class="col-sm-6 col-md-4 col-lg-3 mt-2 mb-5">
@@ -378,9 +390,12 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="text-center">
+      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#fav-band" >Toggle the content below!</button>
+    </div>
+    <div class="container" id="fav-band" class="collapse">
         <h2 id="favband">Favourite Band</h2>
-        <div class="row">
+        <div class="row mb-5">
           <img src="https://cdn.prod.www.spiegel.de/images/405168da-5831-4185-bb7c-f81624fc4237_w948_r1.778_fpx33.98_fpy54.99.jpg" class="img-fluid  col-sm-6 col-md-6 col-lg-8" alt="">
           <div class=" col-sm-6 col-md-6 col-lg-4 mb-0 pb-0 ">
           <h4 class="pt-0 mt-0">Band: Coldplay</h4>
@@ -429,7 +444,10 @@
         </div>
         </div>
     </div>
-    <div class="container covers">
+    <div class="text-center">
+      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#covers" >Toggle the content below!</button>
+    </div>
+    <div class="container covers" id="covers" class="collapse">
         <h2 id="covers">Covers</h2>
         <div class="row">
 
@@ -458,8 +476,10 @@
 
 
 
+    <div class="footer" >
 
     <h2 id="contact">Stay connected</h2>
+    <p class="text-center"> Number of Albums present : </p>
         <footer>
             <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
             <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
@@ -467,12 +487,17 @@
             <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
             <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
         </footer>
+  
+      </div>
+
+     
+
     
     <script>
         function toggle(){
         let imgNodes=document.querySelectorAll('.card img')
         let details=document.querySelectorAll('.card ul li:last-of-type')
-        console.log(details)
+        
         for(i=0;i<imgNodes.length;i++){
             let detail=details[i]
             let imgNode=imgNodes[i]
@@ -482,8 +507,15 @@
         }
     }
     toggle();
+    window.onload=function(){
+      let place=document.querySelector('.footer>p')
+      let cards=document.querySelectorAll('.card')
+      place.innerHTML+=cards.length
+    }
     </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
