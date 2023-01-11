@@ -48,7 +48,7 @@ body{
     background-color:#FFB5D7 ;
 }
 .card{
-    height:500px;
+    height:500px !important;
 }
 
 
@@ -73,5 +73,6 @@ nav a ion-icon{
     vertical-align: middle;
 }
 .card:hover{
-    transform:scale(1.1)
+    transform:scale(1.1);
+    
 }
