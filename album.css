@@ -45,21 +45,26 @@ body{
     background-color:#FFB5D7 ;
 }
 /* .card{
-    height:600px;
+    height:400px;
 } */
 
 
 .card ul li{
     color:#811537;
+    font-size: 10px;
     background-color: 	#ec9dec;
 }
 .card h5{
     color:#64D1AF;
     font-size: 18px;
+    
 }
 .container:nth-of-type(3) img, .container:nth-of-type(5) img{
     border-radius: 35px;
 }
 .card{
     background-color: #8B008B;
+}
+nav a ion-icon{
+    vertical-align: middle;
 }
