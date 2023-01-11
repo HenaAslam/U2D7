@@ -17,8 +17,11 @@ p{
     width:200px;
     margin-top:1rem;
     margin-bottom: 1rem;
-    
+    transition:transform 300ms;
    
+}
+.covers img:hover{
+    transform: scale(1.1);
 }
 footer{
     display:flex;
@@ -44,9 +47,9 @@ footer ion-icon{
 body{
     background-color:#FFB5D7 ;
 }
-/* .card{
-    height:400px;
-} */
+.card{
+    height:500px;
+}
 
 
 .card ul li{
@@ -64,7 +67,11 @@ body{
 }
 .card{
     background-color: #8B008B;
+    transition: transform 300ms;
 }
 nav a ion-icon{
     vertical-align: middle;
+}
+.card:hover{
+    transform:scale(1.1)
 }
